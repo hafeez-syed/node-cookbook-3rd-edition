@@ -1,0 +1,20 @@
+{
+  "name": "node-cookbook",
+  "version": "1.0.0",
+  "description": "NODE COOKBOOK- 3rd edition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hafeez-syed/node-cookbook-3rd-edition.git"
+  },
+  "keywords": [],
+  "author": "Hafeez Syed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hafeez-syed/node-cookbook-3rd-edition/issues"
+  },
+  "homepage": "https://github.com/hafeez-syed/node-cookbook-3rd-edition#readme"
+}
