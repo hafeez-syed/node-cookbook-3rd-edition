@@ -2,8 +2,12 @@
   "name": "node-cookbook",
   "version": "1.0.0",
   "description": "NODE COOKBOOK- 3rd edition",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
+    "start": "node app/index.js",
+    "debug": "node inspect app/index.js",
+    "inspect": "node --inspect app/index.js",
+    "inspect:brk": "node --inspect-brk app/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/hafeez-syed/node-cookbook-3rd-edition/issues"
   },
-  "homepage": "https://github.com/hafeez-syed/node-cookbook-3rd-edition#readme"
+  "homepage": "https://github.com/hafeez-syed/node-cookbook-3rd-edition#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
