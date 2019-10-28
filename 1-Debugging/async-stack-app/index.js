@@ -1,8 +1,14 @@
+if (process.env.NODE_ENV !== 'production') {
+    require('longjohn');
+}
+
 const express = require('express');
 const past = require('./past');
 const future = require('./future');
 const routes = require('./routes');
 const app = express();
+
+app.use(routes);
 
 app.get('/:age', (req, res) => {
     res.send(past(req.params.age, 10) + future(req.params.future, 10))

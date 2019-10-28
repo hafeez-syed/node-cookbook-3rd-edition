@@ -4,10 +4,12 @@
   "description": "NODE COOKBOOK- 3rd edition",
   "main": "app/index.js",
   "scripts": {
-    "start": "node app/index.js",
-    "debug": "node inspect app/index.js",
-    "inspect": "node --inspect app/index.js",
-    "inspect:brk": "node --inspect-brk app/index.js",
+    "start": "node 1-Debugging/app/index.js",
+    "debug": "node inspect 1-Debugging/app/index.js",
+    "inspect": "node --inspect 1-Debugging/app/index.js",
+    "inspect:brk": "node --inspect-brk 1-Debugging/app/index.js",
+    "stack-trace": "node --stack-trace-limit=21 1-Debugging/pretty-stack-app/index.js",
+    "async-stack-trace": "node 1-Debugging/async-stack-app/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +24,8 @@
   },
   "homepage": "https://github.com/hafeez-syed/node-cookbook-3rd-edition#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cute-stack": "^1.4.3",
+    "express": "^4.17.1",
+    "longjohn": "^0.2.12"
   }
 }
