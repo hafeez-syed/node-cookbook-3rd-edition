@@ -1,8 +1,7 @@
 {
-  "name": "node-cookbook",
+  "name": "debugging-process",
   "version": "1.0.0",
-  "description": "NODE COOKBOOK- 3rd edition",
-  "main": "app/index.js",
+  "description": "NODE COOKBOOK- 3rd edition: Debugging process",
   "scripts": {
     "start": "node 1-Debugging/app/index.js",
     "debug": "node inspect 1-Debugging/app/index.js",
@@ -16,8 +15,7 @@
     "prod:debug": "DEBUG_COLORS=no DEBUG=* node 1-Debugging/instrumented-app/index.js",
     "prod": "node -r pino-debug 1-Debugging/logging-app/index.js",
     "prod:silent": "DEBUG=* npm run --silent prod",
-    "node-debug:server": "NODE_DEBUG=timer,http node 1-Debugging/node-debug-server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "node-debug:server": "NODE_DEBUG=timer,http node 1-Debugging/node-debug-server/index.js"
   },
   "repository": {
     "type": "git",
